@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Introducción</title>
+  </head>
+  <body style="background-color:#F3755A">
+    <center>
+    <h1>
+
+      <font color="white" face="arial">Mi primer formulario wiii </font>
+      </h1>
+    <form action=" ">
+      <font face ="arial" size="5">
+      <div>
+        <label for ="nombre">Nombre</label><br>
+        <input type="text" name="nombre" pattern="{4-16}" title="6 o más caracteres" required >
+      </div>
+      <div>
+        <label for = "correo">Correo</label><br>
+        <input type="email" name="correo" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" title="Coloca mail valido" required>
+      </div>
+      <div>
+        <label for = "Auto">Escoge un auto</label><br>
+        <select>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+      <div>
+        <label for ="pw">Password</label><br>
+        <input type="password" name="pw" pattern=".{6,}" title="6 o mas caracteres" required>
+      </div>
+
+      <div>
+        <input type="submit" name="" value="picale">
+      </div>
+    </font>
+    </form>
+  </center>
+
+  </body>
+</html>

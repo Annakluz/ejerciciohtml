@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Convertidor</title>
+  </head>
+  <body>
+    <h1>Vamos a convertir los grados!!!!!!!</h1>
+
+      <table border ="4">
+        <tr>
+          <td>Farenheit</td>
+          <td><input name="farenheit" id="farenheitaC" type="text"/></td>
+          <td><button type="button" onclick="convert('farenheitaC')" name="button">Convierte a Celsius</button></td>
+        </tr>
+        <tr>
+          <td>Celsius</td>
+          <td><input name="Celsius" id="CelsiusaF" type="text"/></td>
+          <td><button type="button" onclick="convert('CelsiusaF')" name="button">Convierte a Farenheit</button></td>
+      </table>
+      <script>
+      function convert(degree) {
+        var num;
+        if (degree == "farenheitaC") {
+          num = document.getElementById("farenheitaC").value * 9 / 5 + 32;
+          document.getElementById("CelsiusaF").value = Math.round(num);
+        } else {
+        num = (document.getElementById("CelsiusaF").value -32) * 5 / 9;
+        document.getElementById("farenheitaC").value = Math.round(num);
+      }
+}
+      </script>
+
+  </body>
+</html>
